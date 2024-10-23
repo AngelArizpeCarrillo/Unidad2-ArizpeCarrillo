@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Investigación videos YouTube</title>
+</head>
+<body>
+
+    <h1>¿Por qué no se pueden reproducir videos de YouTube solamente con HTML?</h1>
+
+    <p>YouTube ha diseñado 2 tipos distintos de URL para diferentes propósitos.</p>
+    <p>Uno de ellos es una URL estándar de visualización, que es la que se utiliza para ver el video directamente en YouTube. Esta lleva a la página completa con el video y su interfaz (comentarios, videos recomendados, descripción, etc.). Esta URL está destinada a ser visitada en el navegador, no a ser embebida en una página externa.</p>
+    <p>Las páginas web no permiten insertar directamente esta URL en un iframe porque YouTube ha implementado restricciones para evitar que su plataforma completa sea cargada en páginas externas, lo cual afectaría la experiencia del usuario y la carga del sitio. Para poder usar esta URL en una página externa, es necesario hacer la incrustación. Esto se logra modificando la URL cambiando la parte "watch?v=" por "embed/".</p>
+    <p></p>
+    <p>Esta URL está diseñada específicamente para ser utilizada dentro de un iframe. Al usarla, se muestra solo el reproductor de video sin la interfaz completa de YouTube, permitiendo que el video se reproduzca de manera aislada en la página que lo contiene.</p>
+    <p></p>
+    <p>Este sistema es necesario por las siguientes razones:</p>
+    <ol>
+        <li>Optimización y control: YouTube optimiza la URL de embed para cargar solo el reproductor del video, lo que es más rápido y evita distracciones como comentarios o videos recomendados.</li>
+        <li>Seguridad y Privacidad: Al usar una URL de embed, YouTube puede controlar qué parte de su plataforma se comparte con sitios externos, lo que mejora la seguridad y privacidad, evitando que otras webs carguen el entorno completo de YouTube.</li>
+        <li>Experiencia de usuario: Incrustar la página completa de YouTube (que se obtiene al usar watch) en un iframe afectaría la usabilidad y diseño de la página donde se incrusta, ya que incluiría elementos no deseados, como la barra de búsqueda de YouTube, comentarios, y más.</li>
+    </ol>
+    
+
+    
+</body>
+</html>

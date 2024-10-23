@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bento grid</title>
+
+    <style>
+        p {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(126, 148, 182);
+            padding-bottom: 10px;
+            
+        }
+
+        #iconos {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(6, minmax(100px, 1fr));
+            grid-template-rows: repeat(3, minmax(100px, 1fr));
+            gap: 20px;
+        }
+
+        .icon-grid {
+            padding-top: 30px;
+            border-radius: 15px;
+            background-color: rgb(70, 70, 70);
+        }
+
+        .icon-grid:hover {
+            background-color: rgb(92, 92, 92);
+            transform: translateY(-5px);
+        }
+
+        .icon-grid:nth-child(1) {
+            grid-column: 1/3;
+        }
+
+        .icon-grid:nth-child(2) {
+            grid-column: 3/5;
+        }
+        
+        .icon-grid:nth-child(3) {
+            grid-column: 5/7;
+        }
+
+        .icon-grid:nth-child(4) {
+            grid-row: 2/4;
+            padding-top: 120px;
+        }
+
+        .icon-grid:nth-child(6) {
+            grid-column: 3/5;
+            grid-row: 2/4;
+            padding-top: 120px;
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+        }
+
+        .icon-grid:nth-child(8) {
+            grid-column: 6/7;
+            grid-row: 2/4;
+            padding-top: 120px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        @media(max-width:768px) {
+            #iconos {
+                grid-template-columns: repeat(2, minmax(100px, 1fr));
+                grid-template-rows: auto;
+            }
+
+            .icon-grid:nth-child(1),
+            .icon-grid:nth-child(2),
+            .icon-grid:nth-child(3),
+            .icon-grid:nth-child(4),
+            .icon-grid:nth-child(6),
+            .icon-grid:nth-child(8) {
+                grid-column: span 1;
+                grid-row: span 1;
+                padding-top: 50px;
+            }
+        }
+
+        @media(max-width:480px) {
+            #iconos {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .icon-grid:nth-child(1),
+            .icon-grid:nth-child(2),
+            .icon-grid:nth-child(3),
+            .icon-grid:nth-child(4),
+            .icon-grid:nth-child(6),
+            .icon-grid:nth-child(8) {
+                grid-column: span 1;
+                grid-row: span 1;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1 style="text-align: center; margin-bottom: 60px; color: white;">Especificaciones de mi PC</h1></header>
+
+    <main id="iconos">
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-carrot" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21s9.834 -3.489 12.684 -6.34a4.487 4.487 0 0 0 0 -6.344a4.483 4.483 0 0 0 -6.342 0c-2.86 2.861 -6.347 12.689 -6.347 12.689z" />
+                <path d="M9 13l-1.5 -1.5" />
+                <path d="M16 14l-2 -2" />
+                <path d="M22 8s-1.14 -2 -3 -2c-1.406 0 -3 2 -3 2s1.14 2 3 2s3 -2 3 -2z" />
+                <path d="M16 2s-2 1.14 -2 3s2 3 2 3s2 -1.577 2 -3c0 -1.86 -2 -3 -2 -3z" />
+              </svg>
+            <p>Zanahoria</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-badge-sd" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                <path d="M14 9v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+                <path d="M7 14.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+              </svg>
+            <p>Memoria</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-anchor" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />
+                <path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              </svg>
+            <p>Ancla</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-screen-share" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M21 12v3a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h9" />
+                <path d="M7 20l10 0" />
+                <path d="M9 16l0 4" />
+                <path d="M15 16l0 4" />
+                <path d="M17 4h4v4" />
+                <path d="M16 9l5 -5" />
+              </svg>
+            <p>Pantalla HQ 480p</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu-2" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+                <path d="M8 10v-2h2m6 6v2h-2m-4 0h-2v-2m8 -4v-2h-2" />
+                <path d="M3 10h2" />
+                <path d="M3 14h2" />
+                <path d="M10 3v2" />
+                <path d="M14 3v2" />
+                <path d="M21 10h-2" />
+                <path d="M21 14h-2" />
+                <path d="M14 21v-2" />
+                <path d="M10 21v-2" />
+              </svg>
+            <p>Procesador</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dog" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M11 5h2" />
+                <path d="M19 12c-.667 5.333 -2.333 8 -5 8h-4c-2.667 0 -4.333 -2.667 -5 -8" />
+                <path d="M11 16c0 .667 .333 1 1 1s1 -.333 1 -1h-2z" />
+                <path d="M12 18v2" />
+                <path d="M10 11v.01" />
+                <path d="M14 11v.01" />
+                <path d="M5 4l6 .97l-6.238 6.688a1.021 1.021 0 0 1 -1.41 .111a.953 .953 0 0 1 -.327 -.954l1.975 -6.815z" />
+                <path d="M19 4l-6 .97l6.238 6.688c.358 .408 .989 .458 1.41 .111a.953 .953 0 0 0 .327 -.954l-1.975 -6.815z" />
+              </svg>
+            <p>Raza</p>
+            <p>Ornitorrinco</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vaccine" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M17 3l4 4" />
+                <path d="M19 5l-4.5 4.5" />
+                <path d="M11.5 6.5l6 6" />
+                <path d="M16.5 11.5l-6.5 6.5h-4v-4l6.5 -6.5" />
+                <path d="M7.5 12.5l1.5 1.5" />
+                <path d="M10.5 9.5l1.5 1.5" />
+                <path d="M3 21l3 -3" />
+              </svg>
+            <p>Vacunas</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pizza" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z" />
+                <path d="M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479" />
+                <path d="M13 11.01v-.01" />
+                <path d="M11 14v-.01" />
+              </svg>
+            <p>Sabor sandía</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-horse" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10l-.85 8.507a1.357 1.357 0 0 0 1.35 1.493h.146a2 2 0 0 0 1.857 -1.257l.994 -2.486a2 2 0 0 1 1.857 -1.257h1.292a2 2 0 0 1 1.857 1.257l.994 2.486a2 2 0 0 0 1.857 1.257h.146a1.37 1.37 0 0 0 1.364 -1.494l-.864 -9.506h-8c0 -3 -3 -5 -6 -5l-3 6l2 2l3 -2z" />
+                <path d="M22 14v-2a3 3 0 0 0 -3 -3" />
+              </svg>
+            <p>Caballos de fuerza</p>
+        </div>
+        <div class="icon-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-fish-off" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.63 3.635" />
+                <path d="M2 9.504c5.307 5.948 10.293 8.57 14.597 7.1m2.583 -1.449c.988 -.788 1.93 -1.836 2.82 -3.153c-3 -4.443 -6.596 -5.812 -10.564 -4.548m-2.764 1.266c-2.145 1.266 -4.378 3.215 -6.672 5.786" />
+                <path d="M18 11v.01" />
+                <path d="M11.153 11.169c-.287 .777 -.171 1.554 .347 2.331" />
+                <path d="M3 3l18 18" />
+              </svg>
+            <p>No se admiten pescados</p>
+        </div>
+    </main>
+    
+</body>
+</html>

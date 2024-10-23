@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tienda multiproducto</title>
+
+    <style>
+      header {
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-family: "Times New Roman";
+      }
+
+      h1 span {
+        color: red;
+      }
+
+      #menu-navegacion {
+        margin-top: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      #menu-navegacion a {
+        text-decoration: none;
+        color: black;
+        padding: 0 10px;
+        font-size: 1.4em;
+      }
+
+      #menu-navegacion a:hover {
+        text-decoration: underline;
+      }
+
+      #productos a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+      }
+
+      #categorias-prod div {
+        text-align: center;
+      }
+
+      #categorias-prod h2 {
+        text-align: center;
+      }
+
+      #categorias-prod a {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      #productos {
+        text-align: center;
+      }
+
+      #productos p {
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+      }
+
+      #productos h3 {
+        font-size: 21px;
+        font-family: "Times New Roman";
+        font-weight: bold;
+      }
+
+      #productos a:hover {
+        text-decoration: underline;
+        padding: 0px 0px 20px 0px;
+      }
+
+      #categorias-prod {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+      }
+
+      footer{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        border-top: 1px solid black;
+      }
+
+      footer h2{
+        font-family: 'Times New Roman', Times;
+        font-size: 22px;
+      }
+
+      footer a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-family: Arial, sans-serif;
+        padding: 0px 0px 7px 0px;
+      }
+
+      footer a:hover{
+        text-decoration: underline;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px; /* Para darle espacio debajo */
+      }
+
+      .container {
+        width: 90%; /* Ajusta el ancho si es necesario */
+        margin: 0 auto; /* Para centrar horizontalmente */
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px; /* Añadir espacio entre productos */
+        justify-items: center; /* Alinear los elementos al centro */
+      }
+
+      .product {
+        text-align: center;
+        padding: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tianguis <span>digital</span></h1>
+
+      <div>
+        <nav id="menu-navegacion">
+          <a href="inicio.html">Inicio</a> |
+          <a href="nosotros.html">Nosotros</a> |
+          <a href="tienda.html">Tienda</a> | <a href="blog.html">Blog</a> |
+          <a href="galeria.html">Galería</a> |
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <h2 style="text-align: center">Categorías</h2>
+    <section id="categorias-prod">
+      <div>
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRxJ1IjcblKHbrC_w5lLGFfMTrxgLF2eJlu5t4ThM9d0btxmjd0EcW2x52cgEtRxW6B0cawAMaSF0mdRwZfq-6_yLOhcssMpd-ZhKBxf1xffO82NonoZnHdiw&usqp=CAE"
+          width="300"
+          height="200"
+        />
+        <a href="#">Ferretería</a>
+      </div>
+      <div>
+        <img
+          src="https://laroussecocina.mx/wp-content/uploads/2021/11/Enmoladas-de-pollo.jpg.webp"
+          width="300"
+          height="200"
+        />
+        <a href="#">Comida</a>
+      </div>
+      <div>
+        <img
+          src="media/Imagen de WhatsApp 2024-10-01 a las 00.37.51_ff513c99.jpg"
+          width="300"
+          height="200"
+        />
+        <a href="#">Mascotas</a>
+      </div>
+    </section>
+
+    <section>
+      <h2
+        style="padding: 30px 0px 0px 0px; text-align: center"
+        id="sobre-nosotros"
+      >
+        Sobre nosotros
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quas
+        ab rerum impedit optio ipsa eos vitae deleniti? Illo, quia? Nobis
+        ducimus tempora libero corrupti modi asperiores, commodi dolor porro!
+      </p>
+    </section>
+
+    <main style="padding: 0px 0px 30px 0px"" class="container">
+      <h2 style="padding: 30px 0px 15px 0px">Nuestros productos</h2>
+      <div class="grid-container">
+        <div class="product">
+            <img src="https://mojo.generalmills.com/api/public/content/rFnqScZ6Yk22DDJxjdLBpw_gmi_hi_res_jpeg.jpeg?v=8152a3c4&t=16e3ce250f244648bef28c5949fb99ff" width="400" height="300" />
+            <h3>Tacos de espagueti</h3>
+            <p> Unos tacos de espagueti como los que se aventaba el Spencer de ICarly (la neta es nomas espagueti con tortilla). </p>
+            <p>$300 la orden</p>
+            <a href="#">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="product">
+            <img src="media/gato sin orejas.jpg" width="400" height="300" />
+            <h3>Gato</h3>
+            <p>Un gato muy bonito. Tiene problemas de sordera.</p>
+            <p>$4</p>
+            <a href="#">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="product">
+            <img src="media/dothog.jpg" width="400" height="300" />
+            <h3>Hot dog invertido</h3>
+            <p>Un hot dog pero al revés. ¿Debería llamarse dot hog?</p>
+            <p>$150</p>
+            <a href="#">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="product">
+            <img src="https://casamarcus.com/media/catalog/product/cache/73587772b4e5d0c5a7b211df17c62a3c/m/8/m8100b.jpg" width="400" height="300" />
+            <h3>Rotamartillo</h3>
+            <p>Un martillo pero que rota.</p>
+            <p>$15</p>
+            <a href="#">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="product">
+            <img src="media/veano.jpg" width="400" height="300" />
+            <h3>Venado</h3>
+            <p>Venado. A veces ladra, pero es porque tiene autismo.</p>
+            <p>$5000000</p>
+            <a href="#">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="product">
+            <img src="media/desarmador paleta.png" width="400" height="300" />
+            <h3>Desarmador de paleta</h3>
+            <p>Literalmente un desarmador de paleta</p>
+            <p>$230</p>
+            <a href="#">Agregar al carrito</a>
+        </div>
+      </div>
+    </main>
+
+    <footer >
+      <div>
+        <h2>Categorías adicionales</h2>
+        <nav class="footer">
+          <a href="#ArmMil">Armamento militar</a> 
+          <a href="#LitClaNeth">Literatura clásica neerlandesa</a> 
+          <a href="#Pelucas">Pelucas</a> 
+          <a href="#InstrMus">Instrumentos musicales</a>
+        </nav>
+      </div>
+
+      <div>
+        <h2>Sobre nosotros</h2>
+        <nav class="footer">
+          <a href="#Historia">Nuestra historia</a> 
+          <a href="#MVV">Misión, visión y valores</a> 
+          <a href="#PolPriv">Política de privacidad</a> 
+          <a href="#TermServ">Términos del servicio</a>
+        </nav>
+      </div>
+
+      <div>
+        <h2>Soporte</h2>
+        <nav class="footer">
+          <a href="#Preguntas">Preguntas frecuentes</a> 
+          <a href="#Ayuda">Ayuda en línea</a> 
+          <a href="#ConfSeg">Confianza y seguridad</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

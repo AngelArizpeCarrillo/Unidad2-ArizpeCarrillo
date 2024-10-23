@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tamaños de texto en CSS</title>
+
+    <style>
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h2{
+            font-size: 35px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        div{
+            height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Unidades de tamaño de texto en CSS</h1>
+    <h2>px (pixel):</h2>
+    <p>Es una unidad de medida absoluta que representa un solo pixel en la pantalla.</p>
+    <p>Su ventaja es que es predecible: lo que defines en píxeles se verá igual sin importar el contexto. Sin embargo, es menos flexible en términos de escalabilidad y accesibilidad, porque no se adapta bien cuando el usuario cambia las configuraciones del navegador o el tamaño de pantalla.</p>
+    <h2>em:</h2>
+    <p>1 em equivale al tamaño de la fuente del elemento que lo contiene. Por ejemplo, si el tamaño de fuente del contenedor es 16px, entonces 1em = 16px. Si defines un texto con 2em, el tamaño será el doble del tamaño de fuente definido en el contenedor.</p>
+    <p>El problema con em es que puede generar un efecto de acumulación si se usa anidado, ya que cada elemento heredará el tamaño del padre.</p>
+    <h2>rem (root em):</h2>
+    <p>Es también una unidad relativa, pero se basa en el tamaño de la fuente del elemento raíz (normalmente el html). Si defines el tamaño de fuente base en el html como 16px, entonces 1rem será siempre 16px, independientemente del contexto en el que se encuentre.</p>
+    <p>A diferencia de em, rem no se acumula y es más fácil de controlar, por lo que es común para layouts escalables.</p>
+    <h2>% (porcentaje:)</h2>
+    <p>Similar a em, los tamaños en porcentaje son relativos al tamaño de la fuente del elemento contenedor. Si defines un tamaño de 100%, el texto tendrá el mismo tamaño que el del contenedor.</p>
+    <p>Esta unidad es útil cuando quieres que el tamaño del texto dependa directamente de la configuración del contenedor y su adaptabilidad.</p>
+    <h2>vw y vh (viewport width y viewport height):</h2>
+    <p>Son unidades relativas al tamaño del viewport (la ventana visible del navegador). 1vw es el 1% del ancho del viewport, y 1vh es el 1% de la altura.</p>
+    <p>Estas unidades son útiles para crear diseños fluidos y responsivos, ya que cambian según el tamaño de la pantalla.</p>
+    <h2>ch:</h2>
+    <p>Es una unidad que representa el ancho del carácter "0" (cero) en la fuente actual.</p>
+    <p>Suele utilizarse para definir tamaños de ancho más consistentes en función de las características de la fuente.</p>
+    
+</body>
+</html>
